@@ -1,0 +1,47 @@
+.Figure_square{
+    height: 400px;
+    padding: 10px;
+
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+        > .figure{
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(var(--color-secondary) 60%, transparent);
+            rotate: -20deg;
+        }
+
+        > .imageContainer {
+            position: absolute;
+
+                > img{
+                    width: fit-content;
+                    height: 300px;
+        
+                    object-fit: cover;
+                }
+                
+        }
+
+
+        > .shadow{
+            width: 250px;
+            height: 20px;
+
+            position: absolute;
+            bottom: 20px;
+
+            background-color: var(--color-dark);
+
+            box-shadow: 0 0 20px 20px var(--color-dark);
+            /* border-radius: 100%; */
+
+            opacity: 30%;
+
+        }
+}

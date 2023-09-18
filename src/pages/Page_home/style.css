@@ -1,0 +1,16 @@
+.page_home{
+
+    > .section_1{
+        background: linear-gradient(var(--color-secondary), var(--color-primary));
+    }
+
+    > .section_2{
+        background-color: var(--color-primary);
+    }
+
+    .section_3{
+        background: linear-gradient(var(--color-primary), var(--color-secondary)) ;
+    }
+
+}
+

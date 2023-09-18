@@ -1,0 +1,34 @@
+.Button_menu{
+    width: 30px;
+    height: 30px;
+
+    position: relative;
+
+        > .stick {
+            width: 100%;
+            height: 3px;
+            background-color: var(--color-light);
+            border-radius: 40px;
+        }
+
+        .stick-1{
+            position: absolute;
+            top: 10%;
+        }
+
+        .stick-2{
+            position: absolute;
+            top: 50%;
+        }
+
+        .stick-3{
+            position: absolute;
+            top: 90%;
+        }
+}
+
+@media(width >= 800px){
+    .Button_menu{
+        display: none;
+    }
+}

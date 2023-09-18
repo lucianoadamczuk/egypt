@@ -1,0 +1,46 @@
+.Figure_circle{
+    height: 400px;
+    padding: 10px;
+
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        > .figure{
+            width: 300px;
+            height: 300px;
+            
+            background: linear-gradient(var(--color-secondary), transparent 80%);
+            rotate: 20deg;
+            border-radius: 100%;
+        }
+
+        > .imageContainer{
+            position: absolute;
+
+            > img{
+                width: fit-content;
+                height: 200px;
+
+                object-fit: cover;
+            }
+        }
+
+        > .shadow{
+            width: 250px;
+            height: 20px;
+
+            position: absolute;
+            bottom: 50px;
+
+            background-color: var(--color-dark);
+
+            border-radius: 100%;
+            box-shadow: 0 0 20px 20px var(--color-dark);
+
+            opacity: 30%;
+            
+        }
+}

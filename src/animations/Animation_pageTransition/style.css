@@ -1,0 +1,36 @@
+.Animation_pageTransition{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    z-index: 9;
+
+        > .sand-storm-1, .sand-storm-2, .sand-storm-3{
+            width: 200%;
+            height: 200vh;
+
+            position: absolute;
+            top: -10px;
+            left: 0;
+
+            background-size: cover;
+
+        }
+
+        > .sand-storm-1{
+            background-image: url("src/assets/effects/sand-storm/sand-storm-1.png");
+            z-index: 6;
+        }
+
+        > .sand-storm-2{
+            background-image: url("src/assets/effects/sand-storm/sand-storm-2.png");
+            z-index: 7;
+        }
+
+        > .sand-storm-3{
+            background-image: url("src/assets/effects/sand-storm/sand-storm-3.png");
+            z-index: 8;
+        }
+
+
+}

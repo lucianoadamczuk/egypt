@@ -1,0 +1,45 @@
+.Button_big{
+    background-color: transparent;
+
+    border: 0px transparent;
+    border-radius: 5px;
+
+    box-shadow: 0 3px 5px var(--color-dark);
+    cursor: pointer;
+
+    transition: 0.5s;
+    z-index: 1;
+
+        > .content{
+
+            padding: 12px 30px 12px 30px;
+            
+            display: flex;
+            align-items: center;
+            gap: var(--gap-medium);
+
+            transition: 0.5s;
+
+                > p{
+                    color: var(--color-dark);
+                }
+                > svg{
+                    transition: 0.8s;
+                    color: var(--color-dark);
+                }
+        }
+}
+
+.Button_big:hover{
+    border-radius: 0px;
+    box-shadow: none;
+    transform: scale(110%);
+
+        > .content{
+            gap: var(--gap-bigger);
+                > svg{
+                    transform: rotateY(180deg);
+                    fill: var(--color-light);
+                }
+    }
+}

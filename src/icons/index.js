@@ -1,0 +1,6 @@
+export {Icon_arrow} from "./Icon_arrow/Icon_arrow"
+export {Icon_play} from "./Icon_play/Icon_play"
+export {Icon_pause} from "./Icon_pause/Icon_pause"
+export {Icon_github} from "./Icon_github/Icon_github"
+export {Icon_linkedin} from "./Icon_linkedin/Icon_linkedin"
+export {Icon_email} from "./Icon_email/Icon_email"
