@@ -15,37 +15,37 @@ export const Page_home = () => {
 
     const carouselData = [
         {
-            backgroundImage: "src/assets/page_home/carousel_3D/slide_1.jpg",
+            backgroundImage: "/assets/page_home/carousel_3D/slide_1.jpg",
             title: "Abu Simbe",
             text: "Asuan"
         },
         {
-            backgroundImage: "src/assets/page_home/carousel_3D/slide_2.jpg",
+            backgroundImage: "/assets/page_home/carousel_3D/slide_2.jpg",
             title: "Naval Port",
             text: "Alejandria"
         },
         {
-            backgroundImage: "src/assets/page_home/carousel_3D/slide_3.jpg",
+            backgroundImage: "/assets/page_home/carousel_3D/slide_3.jpg",
             title: "Giza Pyramids",
             text: "Cairo"
         },
         {
-            backgroundImage: "src/assets/page_home/carousel_3D/slide_4.jpg",
+            backgroundImage: "/assets/page_home/carousel_3D/slide_4.jpg",
             title: "Excursions",
             text: "All around Egypt"
         },
         {
-            backgroundImage: "src/assets/page_home/carousel_3D/slide_5.jpg",
+            backgroundImage: "/assets/page_home/carousel_3D/slide_5.jpg",
             title: "Valley of the king",
             text: "Luxor"
         },
         {
-            backgroundImage: "src/assets/page_home/carousel_3D/slide_6.jpg",
+            backgroundImage: "/assets/page_home/carousel_3D/slide_6.jpg",
             title: "Sharm el Sheikh",
             text: "Sinaí"
         },
         {
-            backgroundImage: "src/assets/page_home/carousel_3D/slide_7.jpg",
+            backgroundImage: "/assets/page_home/carousel_3D/slide_7.jpg",
             title: "Karnak",
             text: "Luxor"
         }
@@ -66,7 +66,7 @@ export const Page_home = () => {
                     paragraph_2="Watch the video below to learn how ancient Egypt contributed to modern-day society with its many cultural developments, particularly in language and mathematics"
                 >
 
-                    <video src="/src/assets/page_home/video_archeology.mp4" 
+                    <video src="/assets/page_home/video_archeology.mp4" 
                         controls 
                         style={
                             {
@@ -92,7 +92,7 @@ export const Page_home = () => {
                     
                     content={
                         <Figure_square
-                            image="src/assets/page_home/tutankhamun.png"
+                            image="/assets/page_home/tutankhamun.png"
                             alt="tutankhamun"
                         />
                     }
@@ -105,7 +105,7 @@ export const Page_home = () => {
                     paragraph="Cats held a significant and revered role in ancient Egyptian religion. They were associated with the goddess Bastet, who was the goddess of home, fertility, and childbirth, as well as a guardian of the pharaoh. Bastet was often depicted with the head of a lioness or as a lioness, emphasizing her connection to feline creatures. "
                     content={
                         <Figure_circle
-                        image="src/assets/page_home/cat.png"
+                        image="/assets/page_home/cat.png"
                         alt="egyptian cat"
                     />
                     }

@@ -30,7 +30,7 @@ export const Widget_activateSounds = () => {
                 setIsPlaying(!isPlaying)
             }}
         >
-            <audio ref={audioRef} src="src/assets/audios/audio_egyptian_music_background.mp3"></audio>
+            <audio ref={audioRef} src="/assets/audios/audio_egyptian_music_background.mp3"></audio>
             {
                 isPlaying ? 
                     <Icon_play/>

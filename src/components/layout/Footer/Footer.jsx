@@ -15,10 +15,10 @@ export const Footer = () => {
             >
                 
                 <div className="footer_sponsorsContainer ">
-                    <img src="src/assets/page_home/sponsors/sponsor_1.png" alt="NatGeo logo"                 />
-                    <img src="src/assets/page_home/sponsors/sponsor_2.png" alt="Pyramid International Logo"  />
-                    <img src="src/assets/page_home/sponsors/sponsor_3.png" alt="BBC logo"                    />
-                    <img src="src/assets/page_home/sponsors/sponsor_4.png" alt="Lonely Plant Logo"           />
+                    <img src="/assets/page_home/sponsors/sponsor_1.png" alt="NatGeo logo"                 />
+                    <img src="/assets/page_home/sponsors/sponsor_2.png" alt="Pyramid International Logo"  />
+                    <img src="/assets/page_home/sponsors/sponsor_3.png" alt="BBC logo"                    />
+                    <img src="/assets/page_home/sponsors/sponsor_4.png" alt="Lonely Plant Logo"           />
                 </div>
 
                 <Container_buttons>
@@ -42,7 +42,7 @@ export const Footer = () => {
                     </div>
                 </div>
             
-                <img src="/src/assets/footer/background.png" alt="desert" />
+                <img src="/assets/footer/background.png" alt="desert" />
         </footer>
     )
 }

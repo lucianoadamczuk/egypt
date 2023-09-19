@@ -18,17 +18,17 @@
         }
 
         > .sand-storm-1{
-            background-image: url("src/assets/effects/sand-storm/sand-storm-1.png");
+            background-image: url("/assets/effects/sand-storm/sand-storm-1.png");
             z-index: 6;
         }
 
         > .sand-storm-2{
-            background-image: url("src/assets/effects/sand-storm/sand-storm-2.png");
+            background-image: url("/assets/effects/sand-storm/sand-storm-2.png");
             z-index: 7;
         }
 
         > .sand-storm-3{
-            background-image: url("src/assets/effects/sand-storm/sand-storm-3.png");
+            background-image: url("/assets/effects/sand-storm/sand-storm-3.png");
             z-index: 8;
         }
 

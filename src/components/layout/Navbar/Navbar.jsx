@@ -12,11 +12,6 @@ export const Navbar = () => {
 
     const audioRef = useRef()
 
-    function handleClick(){
-        if(isMobile){
-            setIsMenuOpen(false)
-        }
-    }
 
     return(
         <nav >
@@ -25,26 +20,26 @@ export const Navbar = () => {
                 <h4>GoToEgypt</h4>
 
                 <section className={`linksContainer ${isMenuOpen && "openMenu"} `}>
-                    <NavLink to="/" onClick={() => handleClick()} >
+                    <NavLink to="/" onClick={() => setIsMenuOpen(false)} >
                         <p onMouseOver={() => audioRef.current.play()} >Home</p>
                     </NavLink> 
-                    <NavLink to="/contact" onClick={() => handleClick()} >
+                    <NavLink to="/contact" onClick={() => setIsMenuOpen(false)} >
                         <p onMouseOver={() => audioRef.current.play()} >Explore</p>
                     </NavLink> 
-                    <NavLink to="/contact" onClick={() => handleClick()} >
+                    <NavLink to="/contact" onClick={() => setIsMenuOpen(false)} >
                         <p onMouseOver={() => audioRef.current.play()} >Articles </p>
                     </NavLink> 
-                    <NavLink to="/contact" onClick={() => handleClick()} >
+                    <NavLink to="/contact" onClick={() => setIsMenuOpen(false)} >
                         <p onMouseOver={() => audioRef.current.play()} >Galeries </p>
                     </NavLink> 
-                    <NavLink to="/contact" onClick={() => handleClick()} >
+                    <NavLink to="/contact" onClick={() => setIsMenuOpen(false)} >
                         <p onMouseOver={() => audioRef.current.play()} >Contact</p>
                     </NavLink> 
                 </section>
                 
-                <Button_menu onClick={() => {setIsMenuOpen(!isMenuOpen), value={isMenuOpen}}}/>
+                <Button_menu onClick={() => {setIsMenuOpen(!isMenuOpen)}}/>
 
-                <audio src="src/assets/audios/audio_button.mp3" ref={audioRef}></audio>
+                <audio src="/assets/audios/audio_button.mp3" ref={audioRef}></audio>
             </article>
         </nav>
     )

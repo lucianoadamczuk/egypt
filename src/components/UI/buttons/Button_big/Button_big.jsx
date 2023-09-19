@@ -9,7 +9,7 @@ export const Button_big = ({text, svg}) => {
     return(
         <Animation_enterAndScale_provider className="Button_big">
             <div className="content" onMouseOver={() => audioRef.current.play()}>
-                <audio src="src/assets/audios/audio_button.mp3" ref={audioRef}></audio>
+                <audio src="/assets/audios/audio_button.mp3" ref={audioRef}></audio>
                 <p> {text} </p>
                 {svg}
             </div>

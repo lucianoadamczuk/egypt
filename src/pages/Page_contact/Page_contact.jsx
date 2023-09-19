@@ -26,7 +26,7 @@ export const Page_contact = () => {
                         </a>
                     </div>
 
-                    <p>lucianoadamczuk@gmail.com</p>
+                    <h6>lucianoadamczuk@gmail.com</h6>
                 </section>
 
                 

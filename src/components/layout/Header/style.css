@@ -12,7 +12,7 @@ header{
             position: absolute;
             bottom: 0;
 
-            background-image: url("src/assets/page_home/background/ground.png");
+            background-image: url("/assets/page_home/background/ground.png");
             
             background-size: cover;
             background-position: center;
@@ -26,7 +26,7 @@ header{
             position: absolute;
             bottom: 0;
 
-            background-image: url("src/assets/page_home/background/ground_2.png");
+            background-image: url("/assets/page_home/background/ground_2.png");
             
             background-size: cover;
             background-position: center;
@@ -40,7 +40,7 @@ header{
             position: absolute;
             bottom: 0;
 
-            background-image: url("src/assets/page_home/background/ground_3.png");
+            background-image: url("/assets/page_home/background/ground_3.png");
             
             background-size: cover;
             background-position: center;
@@ -52,8 +52,10 @@ header{
             height: 100%;
 
             position: absolute;
+            bottom: 0px;
+            left: 0;
             
-            background-image: url("src/assets/Page_home/background/pyramids_front.png");
+            background-image: url("/assets/page_home/background/pyramids_front.png");
             background-size: cover;
             background-position: center;
 
@@ -66,7 +68,7 @@ header{
 
             position: absolute;
 
-            background-image: url("src/assets/page_home/background/pyramids_back.png");
+            background-image: url("/assets/page_home/background/pyramids_back.png");
             background-size: cover;
             background-position: center;
 
@@ -130,7 +132,7 @@ header{
 
             position: absolute;
             
-            background-image: url("src/assets/page_home/background/sky.jpg");
+            background-image: url("/assets/page_home/background/sky.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             
@@ -144,7 +146,7 @@ header{
             top: -50%;
             left: -20%;
             background-repeat: repeat;
-            background: url("src/assets/page_home/background/stars.png");
+            background: url("/assets/page_home/background/stars.png");
 
             animation-name: twinkle;
             animation-duration: 2s;
@@ -158,7 +160,7 @@ header{
             position: absolute;
             top: 0;
             right: 0;
-            background: url("src/assets/page_home/background/stars_2.png");
+            background: url("/assets/page_home/background/stars_2.png");
 
             opacity: 40%;
         }
@@ -206,23 +208,23 @@ header{
         }
 
         .background_ground{
-            background-image: url("src/assets/page_home/background/ground_desktop.png");
+            background-image: url("/assets/page_home/background/ground_desktop.png");
         }
 
         .background_ground_2{
-            background-image: url("src/assets/page_home/background/ground_2_desktop.png");
+            background-image: url("/assets/page_home/background/ground_2_desktop.png");
         }
 
         .background_ground_3{
-            background-image: url("src/assets/page_home/background/ground_3_desktop.png");
+            background-image: url("/assets/page_home/background/ground_3_desktop.png");
         }
 
         > .background_pyramids_front{            
-            background-image: url("src/assets/Page_home/background/pyramids_front_desktop.png");
+            background-image: url("/assets/page_home/background/pyramids_front_desktop.png");
         }
 
         > .background_pyramids_back{            
-            background-image: url("src/assets/Page_home/background/pyramids_back_desktop.png");
+            background-image: url("/assets/page_home/background/pyramids_back_desktop.png");
         }
     }
 }

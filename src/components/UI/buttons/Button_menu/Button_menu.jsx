@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
 import { Context_buttonMenu } from "../../../../contexts"
 
@@ -77,10 +77,15 @@ export const Button_menu = ({onClick}) => {
             })
         }
     }, [isMenuOpen])
+
+    const audioRef = useRef()
     
 
     return(
-        <div className="Button_menu" onClick={() => { setIsMenuOpen(!isMenuOpen), onClick() } }>
+        <div className="Button_menu" 
+            onClick={() => { setIsMenuOpen(!isMenuOpen), audioRef.current.play(), onClick() }}>
+
+                <audio src="/assets/audios/audio_button.mp3" ref={audioRef}></audio>
                 <motion.div 
                     className="stick stick-1"
                     initial={animationsProperties_topStick.initial}

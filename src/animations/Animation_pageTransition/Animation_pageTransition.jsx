@@ -60,7 +60,7 @@ export const Animation_pageTransition_provider = ({children, className}) => {
             <div 
                 className={` ${className} Animation_pageTransition `}
             >
-                <audio src="src/assets/audios/audio_wind.mp3" ref={audioRef}></audio>
+                <audio src="/assets/audios/audio_wind.mp3" ref={audioRef}></audio>
                 <motion.div 
                     className="sand-storm-1"
                     initial={animationSandStorm_1.initial}
