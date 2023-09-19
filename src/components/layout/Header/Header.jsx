@@ -39,15 +39,18 @@ export const Header = () => {
             <motion.div className="background_pyramids_front" style={ isDesktop && {y: animate_pyramid_front}}/>
 
             
-            <motion.div className="textContainer utility_container" style={  { y: animate_text}}>
+            <motion.div className="textContainer utility_container" style={ isDesktop && { y: animate_text}}>
                 <Animation_enterAndScale_provider className="container" >
                 <h4>The acient world</h4>
                 <h1>Discover the awe-inspiring Egyptian world</h1>
 
-                <div className="scrollDown">
-                        <p>Scrolldown</p>
-                        <Icon_arrow/>
-                </div>
+                {isDesktop &&
+                    <div className="scrollDown">
+                            <p>Scrolldown</p>
+                            <Icon_arrow/>
+                    </div>
+                }
+
                 </Animation_enterAndScale_provider>
             </motion.div>
 
