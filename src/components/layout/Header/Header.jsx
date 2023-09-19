@@ -57,7 +57,7 @@ export const Header = () => {
             <motion.div className="background_pyramids_back" style={ isDesktop && { y: animate_pyramid_back}}/>
 
             <motion.div className="background_sky" style={ isDesktop && { backgroundPosition: animate_sky}} />
-            <motion.div className="background_stars"  animate={ isDesktop && { rotate: ["0deg", "360deg"]}} transition={{duration: "60", repeat: "infinite", ease: "linear"}}  />
+            <motion.div className="background_stars"  animate={ isDesktop && { rotate: ["0deg", "360deg"]}} transition={{duration: "200", repeat: "infinite", ease: "linear"}}  />
             <motion.div className="background_stars_2" style={ isDesktop && { rotate: animate_rotation}} />
 
             <div className="layer"></div>
