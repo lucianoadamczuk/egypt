@@ -154,13 +154,15 @@ header{
         }
 
         > .background_stars_2{
-            width: 120%;
+            width: 200%;
             height: 150%;
 
             position: absolute;
             top: 0;
-            left: 0;
+            left: -25%;
+
             background: url("/assets/page_home/background/stars_2.png");
+            background-size: cover;
 
             opacity: 40%;
         }
