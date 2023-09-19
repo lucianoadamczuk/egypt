@@ -139,12 +139,12 @@ header{
         }
 
         > .background_stars{
-            width: 150%;
-            height: 200%;
+            width: 250%;
+            height: 250%;
 
             position: absolute;
             top: -50%;
-            left: -20%;
+            left: -50%;
             background-repeat: repeat;
             background: url("/assets/page_home/background/stars.png");
 
@@ -159,7 +159,7 @@ header{
 
             position: absolute;
             top: 0;
-            right: 0;
+            left: 0;
             background: url("/assets/page_home/background/stars_2.png");
 
             opacity: 40%;

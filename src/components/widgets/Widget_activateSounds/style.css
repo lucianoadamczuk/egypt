@@ -21,3 +21,11 @@
             height: 100%;
         }
 }
+
+.Widget_activateSounds:hover{
+    background-color: var(--color-secondary);
+
+        > svg{
+            fill: var(--color-primary);
+        }
+}
