@@ -12,12 +12,23 @@ import './style.css';
 // import required modules
 import { EffectCoverflow, Navigation } from 'swiper/modules';
 import { Slide_carousel_3D } from '../../../UI';
+import { isMobile } from 'react-device-detect';
 
 export const Carousel_3D = ({dataToShow, backgroundImage, title, text}) => {
+
+    const activateCoverflow = isMobile ? false : "coverflow"
+    const coverflowConfig = isMobile? {} : {
+        rotate: 0,
+        stretch: 0,
+        depth: 80,
+        modifier: 5,
+        slideShadows: true,
+    }
+
     return (
         <>
             <Swiper
-                effect={'coverflow'}
+                effect={activateCoverflow}
                 grabCursor={true}
                 centeredSlides={true}
                 loop={true}
@@ -32,13 +43,9 @@ export const Carousel_3D = ({dataToShow, backgroundImage, title, text}) => {
                         spaceBetween: 0,
                     },
                 }}
-                coverflowEffect={{
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 80,
-                    modifier: 5,
-                    slideShadows: true,
-                }}
+                coverflowEffect={
+                    coverflowConfig
+                }
                 navigation={true}
                 modules={[EffectCoverflow, Navigation]}
                 className="carousel_3D"
