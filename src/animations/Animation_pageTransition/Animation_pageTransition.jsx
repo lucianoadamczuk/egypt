@@ -2,6 +2,7 @@ import { createContext, useEffect, useRef } from "react";
 import { motion } from "framer-motion"
 import "./style.css"
 import { useLocation } from "react-router-dom";
+import { isDesktop, isMobile } from "react-device-detect";
 
 export const Animation_pageTransition = createContext()
 
@@ -51,9 +52,21 @@ export const Animation_pageTransition_provider = ({children, className}) => {
     const audioRef = useRef()
     
     useEffect(() => {
-        audioRef.current.play()
+        if(isDesktop){
+            audioRef.current.play()
+        }
     }, [pathname.pathname])
     
+
+    if(isMobile){
+        return(
+            <Animation_pageTransition.Provider>
+                <div className={className} >
+                    {children}
+                </div>
+            </Animation_pageTransition.Provider>
+        )
+    }
 
     return(
         <Animation_pageTransition.Provider>

@@ -4,6 +4,7 @@ import "./style.css"
 import { useRef} from "react"
 import { motion, useTransform, useScroll } from "framer-motion"
 import { Animation_enterAndScale_provider } from "../../../animations"
+import { isDesktop } from "react-device-detect"
 
 
 export const Header = () => {
@@ -29,16 +30,16 @@ export const Header = () => {
     return(
         <header ref={ref}>
 
-            <motion.div className="background_ground" style={{y: animate_ground_main}}/>
+            <motion.div className="background_ground" style={ isDesktop && { y: animate_ground_main}}/>
 
-            <motion.div className="background_ground_2" style={{y: animate_ground}} />
+            <motion.div className="background_ground_2" style={ isDesktop && { y: animate_ground}} />
 
-            <motion.div className="background_ground_3" style={{y: animate_ground}} />
+            <motion.div className="background_ground_3" style={ isDesktop && { y: animate_ground}} />
 
-            <motion.div className="background_pyramids_front" style={{y: animate_pyramid_front}}/>
+            <motion.div className="background_pyramids_front" style={ isDesktop && {y: animate_pyramid_front}}/>
 
             
-            <motion.div className="textContainer utility_container" style={{y: animate_text}}>
+            <motion.div className="textContainer utility_container" style={  { y: animate_text}}>
                 <Animation_enterAndScale_provider className="container" >
                 <h4>The acient world</h4>
                 <h1>Discover the awe-inspiring Egyptian world</h1>
@@ -50,11 +51,11 @@ export const Header = () => {
                 </Animation_enterAndScale_provider>
             </motion.div>
 
-            <motion.div className="background_pyramids_back" style={{y: animate_pyramid_back}}/>
+            <motion.div className="background_pyramids_back" style={ isDesktop && { y: animate_pyramid_back}}/>
 
-            <motion.div className="background_sky" style={{backgroundPosition: animate_sky}} />
-            <motion.div className="background_stars"  animate={{rotate: ["0deg", "360deg"]}} transition={{duration: "60", repeat: "infinite", ease: "linear"}}  />
-            <motion.div className="background_stars_2" style={{rotate: animate_rotation}} />
+            <motion.div className="background_sky" style={ isDesktop && { backgroundPosition: animate_sky}} />
+            <motion.div className="background_stars"  animate={ isDesktop && { rotate: ["0deg", "360deg"]}} transition={{duration: "60", repeat: "infinite", ease: "linear"}}  />
+            <motion.div className="background_stars_2" style={ isDesktop && { rotate: animate_rotation}} />
 
             <div className="layer"></div>
 

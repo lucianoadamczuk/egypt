@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { Context_buttonMenu } from "../../../../contexts"
 
 import "./style.css"
+import { isDesktop } from "react-device-detect"
 
 
 export const Button_menu = ({onClick}) => {
@@ -80,10 +81,15 @@ export const Button_menu = ({onClick}) => {
 
     const audioRef = useRef()
     
+    function playAudio(){
+        if(isDesktop){
+            audioRef.current.play()
+        }
+    }
 
     return(
         <div className="Button_menu" 
-            onClick={() => { setIsMenuOpen(!isMenuOpen), audioRef.current.play(), onClick() }}>
+            onClick={() => { setIsMenuOpen(!isMenuOpen), playAudio() , onClick() }}>
 
                 <audio src="/assets/audios/audio_button.mp3" ref={audioRef}></audio>
                 <motion.div 

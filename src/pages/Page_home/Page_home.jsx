@@ -66,7 +66,7 @@ export const Page_home = () => {
                     paragraph_2="Watch the video below to learn how ancient Egypt contributed to modern-day society with its many cultural developments, particularly in language and mathematics"
                 >
 
-                    <video src="/assets/page_home/video_archeology.mp4" 
+                    <video src="/assets/page_home/video-archeology.mp4" 
                         controls 
                         style={
                             {

@@ -13,7 +13,7 @@ export const Animation_enterAndScale_provider = ({className, children}) => {
             {opacity: 1},
             {scale: "100%"}
         ],
-        transition: {duration: 1},
+        transition: {duration: 1, ease: "linear"},
     }
 
     return(
