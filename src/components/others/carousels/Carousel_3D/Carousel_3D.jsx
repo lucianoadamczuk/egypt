@@ -33,6 +33,7 @@ export const Carousel_3D = ({dataToShow, backgroundImage, title, text}) => {
                 centeredSlides={true}
                 loop={true}
                 slidesPerView={1.2}
+                spaceBetween={10}
                 breakpoints={{
                     768: {
                         slidesPerView: 2,
